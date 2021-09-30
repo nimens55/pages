@@ -1,0 +1,153 @@
+@font-face {
+	font-family: "Renault"; 
+	src: url("../fonts/RenaultLife.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+} 
+* {
+	margin:0;
+	padding:0;
+	font-family: 'PT Sans', sans-serif;
+	font-size:16px;
+}
+#flb-close {
+	cursor: pointer;
+}
+html{
+	min-width: 1170px;
+}
+.wrapper {
+	width:1170px;
+	margin:0 auto;
+	padding:0 15px;
+	box-sizing: border-box;
+}
+.flex {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+header {
+	min-width: 1170px;
+	position: relative;
+	z-index: 10;
+	height:105px;
+	box-shadow: 0 3px 5px 0 rgba(0,0,0,.15);
+}
+header .flex {
+	height: 100%;
+	align-content: center;
+}
+.logo,.address,.worktime,.phone {
+	position: relative;
+}
+.logo {
+	color: #8c8c8c;
+	padding-left:70px;
+}
+.logo::before, .address::before,.worktime::before,.phone::before{
+	content:"";
+	display:block;
+	background-repeat: no-repeat;
+	position: absolute;
+	left:0px;
+}
+.logo::before {
+	width:60px;
+	height:60px;
+	background-image: url(../img/logo.jpg);
+	top:-7px;
+}
+.logo span{
+	font-weight: bold;
+	color: #000;
+}
+.address,.worktime,.phone {
+	padding-left:40px;
+}
+.address::before,.worktime::before,.phone::before {
+	width:32px;
+	height:32px;
+	top:9px;
+}
+.address::before {
+	background-image: url(../img/map.png);
+}
+.worktime::before {
+	background-image: url(../img/clock.png);
+}
+.phone::before {
+	background-image: url(../img/phone.png);
+}
+.logo span,.address span, .worktime span,.phone span{
+	font-size:20px;
+}
+.banner {
+	min-width: 1170px;
+	height:350px;
+	background-image: url(../img/baner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.banner h1 {
+	width:500px;
+	padding:30px;
+	background-color:rgba(0,0,0,.5);
+	font-family: 'Renault', sans-serif;
+	font-size:40px;
+	text-transform: uppercase;
+	color:#fff;
+}
+.banner h1 span{
+	font-size: 24px;
+	padding:6px 10px;
+	background-color: #f5ad00;
+}
+.listworks h2,.examples-work h2 {
+	font-family: 'Renault', sans-serif;
+	font-size:25px;
+	text-transform: uppercase;
+	border-bottom:1px solid #d2d2d2;
+	margin:10px 0;
+}
+.listworks p,.listworks table,.examples-work h2,.examples-work img {
+	margin-bottom:10px;
+}
+header .flex, .examples-work .flex {
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.listworks table {
+	width:100%;
+	margin:0 auto;
+	border:1px solid rgb(238, 238, 238);
+	border-collapse: collapse;
+}
+.listworks table td, .listworks table th{
+	padding: 10px;
+}
+.listworks table td:first-child, .listworks table th:first-child{
+	width:70%;
+	text-align: left;
+}
+.listworks table td:last-child, .listworks table th:last-child{
+	width:30%;
+	text-align: right;
+}
+.listworks table tr:nth-child(odd) {
+	background-color:rgb(247, 247, 247);
+}
+.examples-work {
+	margin-bottom: 20px;
+}
+.examples-work img {
+	box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4);
+}
+footer {
+	width: 100%;
+	height:60px;
+	padding-top:30px;
+	background-color: #213144;
+	text-align: center;
+	color:#e6e6e6;
+}
